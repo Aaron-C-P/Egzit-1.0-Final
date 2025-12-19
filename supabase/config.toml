@@ -1,0 +1,22 @@
+project_id = "zsczazvjkoirmgkjebui"
+
+[functions.categorize-item]
+verify_jwt = false
+
+[functions.chat-assistant]
+verify_jwt = false
+
+[functions.create-payment]
+verify_jwt = false
+
+[functions.packing-assistant]
+verify_jwt = false
+
+[functions.route-optimizer]
+verify_jwt = false
+
+[functions.verify-payment]
+verify_jwt = false
+
+[functions.suggest-boxes]
+verify_jwt = false

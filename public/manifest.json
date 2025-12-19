@@ -1,0 +1,17 @@
+{
+  "name": "EGZIT - AI-Powered Smart Moving",
+  "short_name": "EGZIT",
+  "description": "Transform your move with AI-powered inventory management, QR tracking, and smart packing assistance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "/egzit-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
