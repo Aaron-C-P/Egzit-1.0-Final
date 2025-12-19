@@ -51,6 +51,31 @@ export default function Auth() {
     return null;
   }
 
+  // Debug: Check if Supabase client is configured correctly
+  // This will help diagnose the "Failed to fetch" error on deployment
+  const checkSupabaseConnection = () => {
+    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+    if (!supabaseUrl || supabaseUrl === 'https://placeholder.supabase.co') {
+      return (
+        <div className="bg-destructive/10 border-l-4 border-destructive p-4 mb-6 mx-4 rounded-r">
+          <div className="flex">
+            <div className="flex-shrink-0">
+              <Shield className="h-5 w-5 text-destructive" />
+            </div>
+            <div className="ml-3">
+              <h3 className="text-sm font-medium text-destructive">Configuration Error</h3>
+              <div className="mt-2 text-sm text-destructive/90">
+                <p>Supabase is not connected. Please check your environment variables.</p>
+                <p className="mt-1 text-xs">VITE_SUPABASE_URL is missing or invalid.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    return null;
+  };
+
   const onSignUp = async (values: z.infer<typeof signUpSchema>) => {
     setIsLoading(true);
     const { error } = await signUp(values.email, values.password, values.name);
@@ -81,6 +106,8 @@ export default function Auth() {
           </p>
         </div>
       </div>
+
+      {checkSupabaseConnection()}
 
       {/* Features */}
       <div className="flex justify-center gap-8 py-6 bg-card border-b">
