@@ -2,9 +2,6 @@
 
 > Transforming Chaotic Moves into Streamlined, Intelligent Processes
 
-## Project Info
-
-**URL**: https://lovable.dev/projects/d427999d-9cef-4884-a2e4-d6b3f50b2027
 
 ## What is EGZIT?
 
@@ -86,10 +83,6 @@ handle_new_user() RETURNS trigger
 - **Maps**: Leaflet + OpenStreetMap for routing and tracking
 - **Payments**: Stripe for secure payment processing
 - **PWA**: Progressive Web App with offline support
-
-## How to Edit
-
-**Use Lovable**: Visit the [Lovable Project](https://lovable.dev/projects/d427999d-9cef-4884-a2e4-d6b3f50b2027) and start prompting.
 
 **Local Development**:
 ```sh
