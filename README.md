@@ -91,11 +91,3 @@ cd <YOUR_PROJECT_NAME>
 npm i
 npm run dev
 ```
-
-## Deployment
-
-Open [Lovable](https://lovable.dev/projects/d427999d-9cef-4884-a2e4-d6b3f50b2027) and click Share → Publish.
-
-## Custom Domain
-
-Navigate to Project > Settings > Domains and click Connect Domain. [Learn more](https://docs.lovable.dev/features/custom-domain#custom-domain)
