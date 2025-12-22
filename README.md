@@ -79,7 +79,7 @@ handle_new_user() RETURNS trigger
 
 - **Frontend**: React 18, Vite, TypeScript, Tailwind CSS, Shadcn UI
 - **Backend**: Supabase (PostgreSQL, Auth, Edge Functions, Storage)
-- **AI**: Lovable AI (GPT/Gemini) for packing recommendations and categorization
+- **AI**:  (GPT/Gemini) for packing recommendations and categorization
 - **Maps**: Leaflet + OpenStreetMap for routing and tracking
 - **Payments**: Stripe for secure payment processing
 - **PWA**: Progressive Web App with offline support
